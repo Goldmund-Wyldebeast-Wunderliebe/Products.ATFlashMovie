@@ -2,6 +2,10 @@
            xmlns:gs="http://namespaces.zope.org/genericsetup"
            i18n_domain="ATFlashMovie">
  
+  <include package="Products.CMFCore" file="permissions.zcml"
+             xmlns:zcml="http://namespaces.zope.org/zcml"
+             zcml:condition="have plone-41" />
+   
   <gs:registerProfile
       name="default"
       title="ATFlashMovie"
